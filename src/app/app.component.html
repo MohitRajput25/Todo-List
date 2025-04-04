@@ -1,0 +1,7 @@
+<section class="div-container">
+
+    <div class="heading"><span> <h1 >TODO LIST</h1></span></div>
+
+<app-task-input (taskAdd)="addTask($event)"></app-task-input>
+<app-task-list [tasks]="tasks" (taskDelete)="deleteTask($event)" (taskEdit)="editTask($event)" class="data-list"></app-task-list>
+</section>

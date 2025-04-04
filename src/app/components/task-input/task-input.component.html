@@ -1,0 +1,8 @@
+<section class="div-input">
+<input type="text" [(ngModel)]="taskTitle" placeholder="Enter Title" class="input-field"   (keyup.enter)="addTask()">
+
+<app-task-buttons (click)="addTask()" [label]="' '" [icon]="'plus'" class="btn-input"  [ngClass]="{ 'disabled-btn': !taskTitle.trim() }"
+>
+    
+</app-task-buttons>
+</section>
